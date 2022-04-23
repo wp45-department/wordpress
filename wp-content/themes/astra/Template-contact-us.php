@@ -3,7 +3,7 @@
 get_header();
 
 ?>
-
+<?php  echo '123' ?>
 <?php
 the_field('phoone_number_1',7);
 ?>
@@ -37,7 +37,7 @@ $wpnew=array(
 'post_type'=>'news'
 'post_status'=>'publish'
 )
-
+$newsquery=new wp_query($wpnew);
 ?>
 
 <?php
